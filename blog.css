@@ -1,0 +1,190 @@
+body {
+    background-color: #000000;
+    color: #000000;
+    font-family: Helvetica, Arial;
+    font-size: 14px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a:visited {
+    color: blue;
+  }
+
+#center {
+    margin: auto;
+    background-color: #FFF;
+    width: 50%;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 20px;
+}
+
+#center-content {
+    margin: auto;
+    background-color: #FFF;
+    width: 75%;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+
+    font-size: 18px;
+}
+
+@media screen and (max-width: 850px) and (-webkit-device-pixel-ratio: 2) {
+    body {
+        font-size: 24px;
+    }
+    #center {
+        width: 95%;
+    }
+    #center-content {
+        width: 95%
+    }
+    #one, #two, #three {
+        display: block; 
+        float: none;
+        width: 100%;
+    }
+}
+
+.heading {
+    padding: 0px;
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+
+.heading a:link {
+    text-decoration: none;
+}
+
+#center-content .navlinks{
+    font-size: 14px;
+}
+
+.title {
+    text-align: center;
+    font-size: 34px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-bottom: 8px;
+    font-style: oblique;
+}
+
+#center-content .title{
+    font-size: 24px;
+}
+
+.title a {
+    color: #000;
+}
+
+.title a:hover {
+    color: blue;
+}
+
+#entry {
+    margin: auto;
+    padding: 0px;
+    margin-bottom: 10px;
+    line-height: 150%;
+}
+
+.entryTitle {
+    font-size: 18px;
+}
+
+.entryTitleSingle {
+    padding-top: 15px;
+    padding-bottom: 5px;
+    font-size: 24px;
+}
+
+.entryTitle a{
+    text-decoration: none;
+}
+
+.entryDate {
+    font-size: 12px;
+    padding: 0px;
+}
+
+.entryDateSingle {
+    font-size: 16px;
+    padding: 0px;
+    padding-bottom: 20px;
+}
+
+.archiveHeader {
+    font-family: "Times New Roman", Times, serif;
+}
+
+
+.archiveBlock {
+    list-style-type: none;
+    padding-bottom: 8px;
+    display: block;
+    overflow: hidden;
+}
+
+.archiveBlock a{
+    text-decoration: none;
+    color: blue;
+}
+
+#container {
+    width:100%;
+    padding-bottom: 25px;
+    padding-top: 5px;
+ }
+ #one {
+    width:36%;
+    float:left;
+    min-height: 5px;
+    min-width: 5px;
+ }
+ #two {
+    display: inline;
+    min-height: 5px;
+    min-width: 5px;
+ }
+ #three {
+    width: 20%;
+    float: right;
+    min-height: 5px;
+    min-width: 5px;
+ }
+
+ .pagination {
+     text-align: right;
+ }
+
+ .pagination a:link {
+    color: blue;
+}
+
+.olderPosts {
+    text-align: right;
+}
+
+.weegee a:link{
+    font-size: 5px;
+    text-decoration: none;
+}
+
+#adventure-center-content {
+    margin: auto;
+    background-color: #e0d3af;
+    width: 75%;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+
+    font-size: 18px;
+}
+
+
