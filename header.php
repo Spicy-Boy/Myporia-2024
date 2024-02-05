@@ -10,11 +10,9 @@
                 <div class="title">
                     <a href="<?php echo get_bloginfo( 'wpurl' );?>">AAAAHH</a>
                 </div>
-                <center>
                     <div class="navlinks">
                         <a href="<?php echo esc_url( get_permalink(8) ); ?>">Posts</a>
                         /
                         <a href="<?php echo esc_url( get_permalink(10) ); ?>">About</a>
                     </div>
-                </center>
             </div>

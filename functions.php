@@ -1,7 +1,8 @@
 <?php
 
 function Myropia_scripts() {
-	wp_enqueue_style( 'blog', get_template_directory_uri() . '/blog.css' );
+	// wp_enqueue_style( 'blog', get_template_directory_uri() . '/blog.css' );
+    wp_enqueue_style( 'blog', get_template_directory_uri() . '/style/blog-style.css' );
 }
 
 add_action( 'wp_enqueue_scripts', 'Myropia_scripts' );
@@ -20,8 +21,11 @@ function pagination_nav() {
  
     if ( $wp_query->max_num_pages > 1 ) { ?>
         <nav class="pagination" role="navigation">
+
             <div class="pagination"><?php next_posts_link( 'Older posts &rarr;' ); ?></div>
+
             <div class="pagination"><?php previous_posts_link( '&larr; Newer posts' ); ?></div>
+            
         </nav>
 <?php }
 }
