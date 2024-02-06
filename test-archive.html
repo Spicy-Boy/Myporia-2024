@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
     
     <head>
@@ -21,7 +22,7 @@
     <body>
         <header>
 
-            <h1><a href="index.html">AAAAHH</a></h1>
+            <h1 id="site-title"><a href="index.html">AAAAHH</a></h1>
 
             <nav>
                 <ul>
@@ -39,7 +40,7 @@
 
         <main>
 
-            <h2>- Archive -</h2>
+            <h2 id="archive-name">- Archive -</h2>
 
             <section id="archive-labels">
                 <div id="archive-label-date">
@@ -74,33 +75,33 @@
 
             <div class="archive-entry">
                 <div class="archive-date">
-                    December 19, 2023
+                    November 2, 2023
                 </div>
                 <div class="archive-mobile-title-date-container">
                     <div class="archive-title">
                         <a href="#">How to Draw a Comic (Literally) – Part 1: The Sketchbook</a>
                     </div>
                     <div class="archive-mobile-date">
-                        December 19, 2023
+                        November 2, 2023
                     </div>
                 </div>
                 <div class="archive-category">
                     Announcement
                     <br>
-                    art
+                    Art
                 </div>
             </div>
 
             <div class="archive-entry">
                 <div class="archive-date">
-                    December 19, 2023
+                    June 3, 2023
                 </div>
                 <div class="archive-mobile-title-date-container">
                     <div class="archive-title">
                         <a href="#">Jose Arcadio</a>
                     </div>
                     <div class="archive-mobile-date">
-                        December 19, 2023
+                        June 3, 2023
                     </div>
                 </div>
                 <div class="archive-category">
@@ -117,3 +118,39 @@
     </body>
 
 </html>
+
+<!-- 
+
+<div class="archiveBlock"> 
+    <div id="container">
+        <div id="one">
+            Date
+        </div>
+        <div id="two">
+            Title
+        </div>
+        <div id="three">
+            Type
+        </div>
+    </div>
+    
+    <?php while ( $wpb_all_query->have_posts() ) : $wpb_all_query->the_post(); ?>
+        <div id="container">
+            <div id="one">
+                <?php the_date(); ?>
+            </div>
+            <div id="two">
+                <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+            </div>
+            <div id ="three">
+                <?php foreach((get_the_category()) as $category){
+                    echo $category->name."<br>";
+                }	?>
+            </div>
+        </div>
+    <?php endwhile; ?>
+</div> 
+
+<?php get_footer(); ?>
+
+ -->
