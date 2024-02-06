@@ -1,7 +1,8 @@
 /*vv DEBUG BORDERS vv */
-div, header, nav, main, footer {
+/*div,*/ 
+/* header, nav, main, footer {
     border: 2px dashed orange;
-}
+} */
 
 body {
     /* default is dark theme background and text */
@@ -37,16 +38,79 @@ nav a {
     
 }
 
-.archive-entry {
-    display: flex;
-    flex-wrap: wrap;
+main h2 {
+    text-align: center;
 }
 
+/*vvv ARCHIVE PAGE STYLE vvv*/
+#archive-labels {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: rgb(73, 73, 73) 2px solid;
+
+    padding-bottom: 0;
+    margin-bottom: 15px;
+}
+#archive-labels h6 {
+    padding: 0;
+    margin: 0;
+}
+#archive-label-date {
+    display: none;
+    padding-bottom: 2px;
+}
+/*
+#archive-label-title {
+
+}
+#archive-label-category {
+
+}
+*/
+
+.archive-entry {
+    display: flex;
+    flex-wrap: nowrap;
+
+
+    border-bottom: rgb(49, 49, 49) 2px solid;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+.archive-entry a {
+    text-decoration: none;
+}
+/* THIS vvv is used for mobile formating only */
+.archive-mobile-title-date-container {
+    flex-basis: 55%;
+}
+.archive-mobile-date {
+    font-size: .75em;
+}
+
+.archive-date {
+    display: none;
+}
+.archive-title {
+    order: -1;
+    padding-bottom: 4px;
+}
+.archive-category {
+    font-size: .75em;
+    margin-left: auto;
+}
+
+/* vv FOOTER STYLE vv */
 footer {
     text-align: center;
 }
 footer p {
     color: rgb(148, 148, 148);
 }
+
+/* ### ### ### */ /* ### ### ### */ /* ### ### ### */
+    /* vvv DESKTOP LAYOUT via media queries vvv */
+
+
 
 
