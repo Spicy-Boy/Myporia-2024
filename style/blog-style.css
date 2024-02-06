@@ -8,6 +8,18 @@ body {
     /* default is dark theme background and text */
     background-color: #121212;
     color: white;
+
+    /*Aaron added some global defaults vvv*/
+    font-family: Helvetica, Arial;
+    font-size: 14px;
+}
+
+img {
+    max-width: 100%;
+}
+
+main {
+    background-color: #1d1d1d;
 }
 
 header h1 {
@@ -79,6 +91,8 @@ main h2 {
 }
 .archive-entry a {
     text-decoration: none;
+    /* color: #3f84e4; */
+    color: #4188ec;
 }
 /* THIS vvv is used for mobile formating only */
 .archive-mobile-title-date-container {
@@ -111,6 +125,67 @@ footer p {
 /* ### ### ### */ /* ### ### ### */ /* ### ### ### */
     /* vvv DESKTOP LAYOUT via media queries vvv */
 
+@media (min-width: 800px) {
 
+    main {
 
+        margin: 5px auto 0 auto;
+        padding: 2px 15px 5px 15px;
+        max-width: 800px;
 
+        background-color: #1d1d1d;
+
+    }
+
+}
+
+@media (min-width: 1200px) {
+
+    main {
+        max-width: 1200px;
+    }
+
+    /*vvv ARCHIVE PAGE desktop layout vvv*/
+    #archive-labels {
+        display: flex;
+        justify-content: space-around;
+    }
+    #archive-label-date {
+        display: block;
+        margin-right: 15px;
+    }
+    #archive-label-title {
+
+    }
+    #archive-label-category {
+
+    }
+    /* vv mobile date is invisible on desktop */
+    .archive-mobile-date {
+        display: none;
+    }
+
+    .archive-entry {
+        display: flex;
+        justify-content: center;
+    }
+
+    .archive-date {
+        display: block;
+    }
+    .archive-title {
+        text-align: center;
+    }
+    .archive-mobile-title-date-container {
+        text-align: center;
+
+        /* flex-basis: 50%; */
+    }
+    .archive-category {
+        font-size: 1em;
+        margin-left: 0;
+        /* padding-right: 15px; */
+
+        /* flex-basis: 24%; */
+    }
+}
