@@ -1,4 +1,5 @@
-<div id="entry">
+
+<!-- <div id="entry">
 
 <center>
     <div class="entryTitleSingle">
@@ -10,4 +11,11 @@
         <?php the_content(); ?>
     </div>
 
-</div>
+</div> -->
+
+<center>
+    <br>
+    ;)
+    <br>
+<!-- TODO -->
+</center>

@@ -1,3 +1,4 @@
+<!-- DEPRECATED... dont bother with this! -->
 <div id="entry">
 
     <?php	the_post_thumbnail('thumbnail'); ?>

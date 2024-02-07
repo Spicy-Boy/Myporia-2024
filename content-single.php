@@ -1,17 +1,19 @@
-<div id="entry">
+<!-- this gets displayed on individual post pages -->
+<!-- called from single.php! -->
+<article class="content-entry">
 
-    <?php	the_post_thumbnail('thumbnail'); ?>
-<center>
-    <div class="entryTitleSingle">
-        <?php the_title(); ?>
+    <div class="content-title-wrapper">
+        <div class="content-title">
+            <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+        </div>
+        <div class="content-date padding-10px">
+            <?php
+                echo get_the_date()
+            ?>
+        </div>
     </div>
 
-    <div class="entryDate">
-        <?php the_date(); ?>
-    </div>
-</center>
-    <div class="content">
+    <div class="content-content">
         <?php the_content(); ?>
     </div>
-
-</div>
+</article>
