@@ -2,7 +2,8 @@
 
 function Myropia_scripts() {
 	// wp_enqueue_style( 'blog', get_template_directory_uri() . '/blog.css' );
-    wp_enqueue_style( 'blog', get_template_directory_uri() . '/style/blog-style.css' );
+    wp_enqueue_style( 'blog-style', get_template_directory_uri() . '/style/blog-style.css' );
+    wp_enqueue_script('toggleLight', get_template_directory_uri() . '/js/toggleLight.js');
 }
 
 add_action( 'wp_enqueue_scripts', 'Myropia_scripts' );
