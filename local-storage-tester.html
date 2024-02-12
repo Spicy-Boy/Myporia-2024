@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage Tester</title>
+
+    <style>
+        body {
+            background-color: red;
+        }
+        .centered {
+            margin: 0 auto 0 auto;
+            padding: 5px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="centered">
+        Hello!!
+        <br>
+        <button id="color-changer-button">CLICK ME!</button>
+    </div>
+
+
+
+    <script>
+        let colorButton = document.getElementById("color-changer-button");
+        colorButton.addEventListener("click", changeBackground);
+
+        let isThemeToggled = false;
+
+        setBackground();
+
+        // document.cookie = "isThemeToggled=false";
+
+        // let toggleState = getCookie("isThemeToggled");
+
+        // console.log("toggleState = "+toggleState);
+
+        function changeBackground ()
+        {
+            isThemeToggled = !isThemeToggled;
+            console.log("Theme toggled = "+isThemeToggled);
+
+            setBackground();
+
+        }
+
+        function setBackground () {
+
+            if (isThemeToggled)
+            {
+                let domBody = document.body;
+                domBody.style.backgroundColor = "lightgreen";
+            }
+            else {
+                
+                console.log("hi trying to reset");
+
+                document.body.style = '';
+
+                // let domBody = document.body;
+                // domBody.style.backgroundColor = "blue";
+            }
+
+        }
+    </script>
+</body>
+</html>
