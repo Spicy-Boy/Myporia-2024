@@ -249,6 +249,9 @@ footer p {
     .content-content {
         font-size: 18px;
     }
+    .content-entry-single { /*so that single pages are bigger on desktop mode*/
+        max-width: 900px;
+    }
 
     /*vvv ARCHIVE PAGE desktop layout vvv*/
     #archive-labels {
