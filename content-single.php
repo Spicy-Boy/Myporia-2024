@@ -1,6 +1,6 @@
 <!-- this gets displayed on individual post pages -->
 <!-- called from single.php! -->
-<article class="content-entry content-entry-single">
+<article class="content-entry-single">
 
     <div class="content-title-wrapper">
         <div class="content-title">
