@@ -6,7 +6,8 @@
 
 body {
     /* default is dark theme background and text */
-    background-color: #121212;
+    /* background-color: #121212; */
+    background-color: #1d1d1d;
     color: white;
 
     /*Aaron added some global defaults vvv*/
@@ -36,7 +37,8 @@ img {
 }
 
 main {
-    background-color: #1d1d1d;
+    /* background-color: #1d1d1d; */
+    background-color: #121212;
     padding: 15px;
     margin-top: 10px;
 }
@@ -88,7 +90,8 @@ nav a:hover {
     margin-left: auto;
     margin-right: auto;
 
-    background-color: #1d1d1d;
+    /* background-color: #1d1d1d; */
+    background-color: #121212;
 }
 .content-entry a {
     color: #4188ec;
@@ -223,7 +226,8 @@ footer p {
         margin-top: 10px;
         max-width: 800px;
 
-        background-color: #1d1d1d;
+        /* background-color: #1d1d1d; */
+        background-color: #121212;
 
     }
 

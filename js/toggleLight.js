@@ -1,5 +1,5 @@
 
-// let isLightToggled = false;
+// THE COOKIE VALUE IS SET HERE!
 let isLightToggled = false;
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -36,6 +36,7 @@ function setTheme ()
     }
     else {
         // vvv resets all JS assigned style
+        
         // Get all elements on the page
         var allElements = document.querySelectorAll('*');
 
