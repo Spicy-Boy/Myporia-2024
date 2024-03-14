@@ -104,6 +104,11 @@ nav a:hover {
     /* background-color: #1d1d1d; */
     background-color: #121212;
 }
+.content-entry-single a {
+    color: #4188ec;
+    text-decoration: none;
+}
+
 .content-entry a {
     color: #4188ec;
     text-decoration: none;
